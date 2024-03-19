@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Links</title>
+  <style>
+    /* Some basic styles for navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Style for grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-gap: 10px;
+    }
+    .grid img {
+      width: 60%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#menu">Menu</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Image Links</h2>
+    <p>Welcome to our website! Explore our gallery and menu below.</p>
+    <a href="https://www.jpost.com/insights/article-780310"><img src="stockphoto-1423404077-1024x1024.jpg" width="500" height="500" alt="Technology"></a>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <a href="https://pixabay.com/images/search/nature/"><img src="istockphoto-1394781347-1024x1024.jpg" width="500" height="500" alt="Nature"></a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="https://www.cnet.com/health/nutrition/moderate-these-11-foods-to-balance-your-diet-and-achieve-your-goals/"><img src="anh-nguyen-kcA-c3f_3FE-unsplash.jpg" width="500" height="500" alt="Food 1"></a>Indulge in Nature's Bounty: Our menu offers an enticing fusion of fresh vegetables and eggs, each dish crafted with care to tantalize your taste buds. From vibrant salads to hearty omelets, savor the wholesome goodness and vibrant flavors of our farm-to-table fare. Bon appétit!</li>
+      <li><a href="https://www.cnet.com/health/nutrition/moderate-these-11-foods-to-balance-your-diet-and-achieve-your-goals/"><img src="anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" width="500" height="500" alt="Food 2"></a>Indulge in our mouthwatering pizzas, crafted with the finest ingredients and baked to perfection. From classic Margherita to gourmet specialties, each slice is a flavor-packed delight. Explore our menu and experience the irresistible taste of authentic Italian goodness in every bite. Buon Appetito</li>
+      <li><a href="https://www.cnet.com/health/nutrition/moderate-these-11-foods-to-balance-your-diet-and-achieve-your-goals/"><img src="chad-montano-eeqbbemH9-c-unsplash.jpg" width="500" height="500" alt="Food 3"></a>Indulge in the perfect harmony of warm, freshly baked bread drizzled with golden honey. Our delectable combination tantalizes the taste buds, offering a delightful blend of sweetness and wholesome goodness. Savor every bite of this comforting treat, a timeless classic that brings joy to every meal</li>
+    </ul>
+  </section>
+</body>
+</html>
