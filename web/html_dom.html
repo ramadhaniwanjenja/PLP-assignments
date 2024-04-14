@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+     <html>
+        <head>
+            <title>HTML DOM AND EVENTS</title>
+        </head>
+        <body>
+            <p onmouseover="changesize()" onmouseout="changecolor()" id="p_one">Hello, welcome to REA innovation Web page</p>
+            <button id="btn_change">Change</button>
+            <button onclick="changecolor()"> change color</button>
+            <script>
+                const button=document.querySelector('#btn_change');
+
+                function ChangeText(){
+                    const p=document.querySelector('#p_one');
+                    p.innerText = "the paragraph content has been changed";
+                }
+                button.addEventListener('click',ChangeText);
+                document.addEventListener('keydown', (event)=>{
+                    console.log('you have pressed the key' + event.key);
+                });
+                document.addEventListener('keyup', (event)=>{
+                    console.log(event.key+ 'has been realesed');
+                });
+                document.addEventListener('mousedown', (event)=>{
+                    console.log('you have pressed the mouse button' +event.key);
+                });
+                document.addEventListener('mouseup', (event)=>{
+                    console.log('you have released the mouse button' +event.key);
+                });
+                function changecolor(){
+                    var p=document.getElementById('p_one');
+                    p.style.color='red';
+                }
+                function changesize(){
+                    let p=document.getElementById('p_one');
+                    p.style.fontSize='30px';
+                    p.style.color='blue';
+                }
+            </script>
+        </body>
+     </html>
